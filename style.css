@@ -1,0 +1,267 @@
+
+body {
+    background-color: black;
+}
+.background-container {
+    width: 100%;
+    height: 663px;
+    background-image: url(images/bgimg1);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    position: relative;
+    overflow: hidden;
+}
+.navbar {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 3%;
+}
+
+.logo {
+    width: 9.25rem;
+    height: 2.5rem;
+    margin-top: 10px;
+}
+
+.filterbox {
+    background-color: black;
+    height: 663px;
+    width: 100%;
+    opacity: 0.665;
+    top: 0;
+    position: absolute;
+}
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.lang-button {
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(15, 4, 4, 0.678);
+    padding: 0.6rem 1rem;
+    word-spacing: 0.6rem;
+    border: 1px solid white;
+}
+
+.signin-button {
+    color: white;
+    font-size: 1rem;
+    background-color: var(--red);
+    padding: 14px 28px;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
+}
+
+.signin-button:hover {
+    background-color: rgb(156, 19, 19);
+}
+
+
+
+.header-title {
+    color: white;
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 720px;
+    gap: 25px;
+}
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    font-family:'poppins';
+    font-size: 3rem;
+}
+
+.h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+/* Email Form */
+.email-form {
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    margin-bottom: 10px;
+}
+
+.email-typo {
+    background-color: #111213;
+    border: 1px solid #5F6160;
+    padding: 0px 360px 0px 20px;
+    color: white;
+}
+
+.submit-btn {
+    background-color: var(--red);
+    border-radius: 3px;
+    padding: 1rem 1.6rem;
+    word-spacing: 3px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.divider {
+    border: 5px solid #232323;
+    position: relative;
+}
+
+/* Section 2 */
+.section2-info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section2-info h1 {
+    font-size: 3rem;
+    font-family: 'Poppins';
+}
+
+.section2-info p {
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+}
+
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75vw;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.section2-video {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.section2-video img {
+    position: absolute;
+    z-index: 20;
+    margin: 0;
+    height: 400px;
+    width: 600px;
+}
+
+.section2-video video {
+    object-fit: cover;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    margin: 90px 0 0 90px;
+}
+
+
+.section3{
+    display: flex;
+    justify-content: space-around;
+    max-width: 80vw;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.img-section3 img{
+    width: 305px;
+    height: 240px;
+}
+.text-section3{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.text-section3 h1{
+    color: aliceblue;
+    font-size: 3rem;
+    font-family: 'Poppins';
+}
+.text-section3 p{
+    color: aliceblue;
+    font-size: 1.4rem;
+    font-family: 'Poppins';
+}
+
+
+.header-faqs{
+    color: rgb(255, 255, 255);
+    font-size: 2.6rem;
+    font-family: 'Poppins';   
+    text-align: center;
+    margin: 7vh auto;
+}
+.faqbox{
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Poppins';   
+    justify-content: space-between;
+    color:white;
+
+    max-width: 80vw;
+    background-color: #3E3E3E;
+    margin: 20px auto;
+    transition: background-color 0.3s,ease;
+ cursor: pointer;
+    padding: 18px 13px 15px 10px;
+}
+.faqbox:hover{
+background-color: #3d3b3b;
+}
+.email-text{
+    margin: 10px 10px 10px 10px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px auto;
+    max-width: 80vw;
+    padding: 100px 107px 40px 236px;
+    gap: 100px;
+}
+.grid-list-item{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    text-decoration: underline #414141;
+    
+}
+.grid-list-item li{
+    cursor: pointer;
+}
+.questions{
+    color: #414141;
+    font-size: 1rem;
+    font-weight: 300; 
+    padding: 0px 0px 0px 0px ;
+    cursor: pointer;
+}
